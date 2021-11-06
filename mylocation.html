@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dbd46623ed574eac98639e6a2cedf07e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dbd46623ed574eac98639e6a2cedf07e" ></div>
+        
+</body>
+<script>    
+    
+            var map_dbd46623ed574eac98639e6a2cedf07e = L.map(
+                "map_dbd46623ed574eac98639e6a2cedf07e",
+                {
+                    center: [9.0579, 7.4951],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_682bf743a0ea458a8f6944bbc88fb577 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dbd46623ed574eac98639e6a2cedf07e);
+        
+    
+            var circle_marker_93939002ad464c5984c3b00dc83715dc = L.circleMarker(
+                [9.0579, 7.4951],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_dbd46623ed574eac98639e6a2cedf07e);
+        
+    
+        var popup_acb055f49aef4a64be5cf9cd75e327fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57eda30b18464c009c56adfb734a4cd9 = $(`<div id="html_57eda30b18464c009c56adfb734a4cd9" style="width: 100.0%; height: 100.0%;">Nigeria</div>`)[0];
+            popup_acb055f49aef4a64be5cf9cd75e327fb.setContent(html_57eda30b18464c009c56adfb734a4cd9);
+        
+
+        circle_marker_93939002ad464c5984c3b00dc83715dc.bindPopup(popup_acb055f49aef4a64be5cf9cd75e327fb)
+        ;
+
+        
+    
+    
+            var marker_ed5bf22d3dda4ee696ad6e41fd96ff96 = L.marker(
+                [9.0579, 7.4951],
+                {}
+            ).addTo(map_dbd46623ed574eac98639e6a2cedf07e);
+        
+    
+        var popup_74ec894101f14261a5a479b0789ecfcd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3268caf299b4ae9a6b79926ccaaaf78 = $(`<div id="html_c3268caf299b4ae9a6b79926ccaaaf78" style="width: 100.0%; height: 100.0%;">Nigeria</div>`)[0];
+            popup_74ec894101f14261a5a479b0789ecfcd.setContent(html_c3268caf299b4ae9a6b79926ccaaaf78);
+        
+
+        marker_ed5bf22d3dda4ee696ad6e41fd96ff96.bindPopup(popup_74ec894101f14261a5a479b0789ecfcd)
+        ;
+
+        
+    
+</script>
